@@ -1,6 +1,7 @@
-function DataGridBody({ children }) {
+
+function DataGridBody({children}) {
   return (
-    <tbody className="bg-gray-600 ">
+    <tbody className="bg-gray-300"> 
       {children}
     </tbody>
   );

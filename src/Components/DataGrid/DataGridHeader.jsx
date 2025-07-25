@@ -2,16 +2,21 @@ import {tableHeaders} from "../../TableData/Data.js";
 
 function DataGridHeader({ children }) {
   return (
-    <thead>
+    <>
+      <thead>
         <tr>
           {tableHeaders.map((heading) => (
-            <th key={heading} className="p-2 font-bold border border-gray-300" >
+            <th
+              key={heading}
+              className="font-bold border border-gray-300 bg-violet-400 text-center text-white p-5"
+            >
               {heading}
-              {children}
             </th>
           ))}
         </tr>
-    </thead>
+      </thead>
+      {children}
+    </>
   );
 }
 

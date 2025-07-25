@@ -1,7 +1,7 @@
 function GridLayout({ children }) {
 return (
-  <div>
-    <table className="w-400 h-220 bg-white shadow-lg ml-14 mt-4 rounded-[50px] border-separate border-spacing-0 border border-black ">
+  <div className="  w-400 h-auto  bg-white ml-10 mt-10 p-10 rounded-4xl ">
+    <table className=" rounded-md  w-350 h-auto ml-23 mt-10 border-separate border border-black shadow-2xs">
       {children}
     </table>
   </div>
